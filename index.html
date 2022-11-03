@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Análise Forense</title>
+</head>
+
+<body>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <a class="nav-link" href="#introducao">Introdução</a>
+          <a class="nav-link" href="#forenseRedes">Ciência Forense em Redes</a>
+          <a class="nav-link" href="#papelInternet">Papel da Internet na Análise Forense</a>
+          <a class="nav-link" href="#rastrosFisicaEnlace">Rastros Digitais nas Camadas Física e de Enlace</a>
+          <a class="nav-link" href="#investigacaoRedeTransporte">Investigação nas Camadas de Rede e Transporte</a>
+          <a class="nav-link" href="#antiForense">Antiforense</a>
+          <a class="nav-link" href="#conclusao">Conclusão</a>
+          <a class="nav-link" href="#perguntas">Perguntas</a>
+          <a class="nav-link" href="#bibliografia">Bibliografia</a>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid">
+      <!-- Introdução -->
+      <div class="container content" id="introducao">
+        <h1 class="display-4 title">Introdução</h1>
+        <ul>
+          <p class="lead">
+            Com o avanço da tecnologia, estamos acompanhando cada vez mais crimes ocorrendo nos espaços digitais das
+            redes. As provas eletrônicas podem ser coletadas de uma ampla gama de fontes, tais como computadores,
+            smartphones, armazenamento remoto, sistemas aéreos não tripulados, equipamentos embarcados em navios, e
+            muito mais.
+
+            <br /><br />
+            Sendo assim, governos no mundo todo estão sendo confrontados com uma necessidade crescente de investigar
+            crimes cometidos parcialmente ou totalmente pela Internet ou outros meios eletrônicos. Foi necessário então,
+            criar procedimentos únicos para buscar, localizar e preservar eficazmente todos os tipos de provas
+            eletrônicas, e nesse contexto surge a Análise Forense Digital.
+            <br /><br />
+            Análise Forense Digital é um ramo da ciência forense que trabalha com um conjunto de técnicas para coleta e
+            exame de evidências digitais, reconstrução de dados e ataques, identificação e rastreamento de invasores.
+            <br /><br />
+            O principal objetivo da perícia forense digital é extrair dados da evidência eletrônica, analisá-la e
+            apresentar as conclusões para a acusação. Todos os processos utilizam técnicas forenses sólidas para
+            garantir que as descobertas sejam admissíveis em tribunal.
+          </p>
+        </ul>
+      </div>
+
+
+      <br />
+      <!-- Ciência Forense em Redes -->
+      <div class="container content" id="forenseRedes">
+        <h1 class="display-4 title">Ciência Forense em Redes</h1>
+        <ul>
+          <p class="lead">
+
+            A análise de um disco rígido é um procedimento relativamente bem definido quando comparado à análise de uma
+            rede, nelas os investigadores enfrentam um número de desafios muito mais complexos. Os dados de sistemas em
+            rede são dinâmicos e voláteis, tornando difícil fazer uma análise de uma rede sobre um recorte temporal.
+            Diferentemente de um computador, não é viável desligar uma rede para realizar a investigação, pois os
+            investigadores possuem a responsabilidade de recolher provas com o mínimo de interrupção aos negócios que
+            dependam da rede, além disso, o fechamento de uma rede resultará na destruição da maior parte das provas
+            digitais nelas contidas.
+
+            <br /><br />
+            Para tornar mais complexas suas operações, ao contrário do crime no mundo físico, um criminoso pode estar em
+            vários lugares de uma rede. Esta distribuição da atividade criminosa torna ainda mais difícil isolar a cena
+            do crime.
+            <br /><br />
+            <img src="images/SistemasDistribuidos.png" alt="Sistemas Distribuidos" width="80%">
+            <figcaption class="figure-caption">Fonte: https://static.packt-cdn.com/products/9781787126992/graphics/Insert-Image_01_01-1.png</figcaption>
+            <br /><br />
+            Em contrapartida, ter provas distribuídas em muitas máquinas pode ser vantajoso para a investigação. A
+            distribuição das informações dificulta a destruição das evidências, se as provas são danificadas em um
+            computador uma cópia pode ser encontrada em outro. Muitas organizações fazem sobretudo um backup de suas
+            informações regularmente, o que ajuda ainda mais em todo processo.
+            <br /><br />
+          </p>
+        </ul>
+      </div>
+
+
+      <br />
+      <!-- Papel da Internet na Análise Forense -->
+      <div class="container content" id="papelInternet">
+        <h1 class="display-4 title">Papel da Internet na Análise Forense</h1>
+        <ul>
+          <p class="lead">
+            Com o crescimento exponencial do uso da Internet, cada vez mais pessoas estão usando computadores para
+            cometer crimes, e por consequência, aumentando o número de evidências criadas em ambientes digitais.
+            Sentindo-se protegidos por um suposto anonimato, os indivíduos buscam informações na internet que não
+            buscariam no mundo físico e expressam suas opiniões mais controversas, falas que normalmente guardariam para
+            si mesmos.
+            <br /><br />
+            Esses indivíduos muitas vezes não possuem o conhecimento técnico para saber que os servidores na Internet
+            guardam uma quantidade significativa de informações sobre suas atividades pessoais. Alguns desses dados são
+            temporários, podendo permanecer nos servidores durante poucos segundos, minutos ou dias, enquanto outras
+            formas de dados digitais podem ser recuperados anos após os incidentes. Estes dados podem nos trazer
+            informações sobre os pensamentos e interesses particulares de um indivíduo, padrões de comportamento na web
+            e onde estava em um dia específico, informações que podem ser muito úteis para uma investigação. Tudo isso
+            torna a Internet um excelente local para encontrar evidências sobre algum suspeito.
+            <br /><br />
+          <p class="h4"> Anonimato Online </p>
+          <ul style="list-style: none;" class="lead">
+            Em uma investigação é importante que os investigadores estejam familiarizados com o anonimato on-line para
+            se proteger, e entender como os criminosos o usam, para evitar serem descobertos. Além de ocultar
+            informações pessoais, como o nome, e número de telefone, alguns criminosos usam endereços IP que não estão
+            ligados a eles. Esses endereços IP podem ser obtidos através de ISPs gratuitos, que permitem que pessoas
+            entrem na Internet sem exigir que elas se identifiquem. Servidores de bibliotecas e cibercafés são outros
+            métodos populares de realizar uma conexão à Internet de forma anônima.
+            <br /><br />
+            Os investigadores devem usar o anonimato para se proteger enquanto buscam criminosos na Internet,
+            particularmente quando conduzem uma investigação sigilosa. As investigações online podem ser usadas em
+            muitos tipos de atividades criminosas, como jogos de azar online. Ao realizar a investigação é necessário
+            criar várias identidades falsas para fazer transações e reunir informações das organizações que realizam
+            tais crimes.
+          </ul>
+          <br /><br />
+          <p class="h4"> Criptografia </p>
+          <ul style="list-style: none;" class="lead">
+            Para proteger suas mensagens na Internet, alguns indivíduos criptografam seus dados utilizando softwares ou
+            serviços de e-mail especializados. Outros usam o padrão de e-mail seguro (S/MIME) que é integrado em muitos
+            clientes de e-mail. As chaves de criptografia usadas no S/MIME são geralmente armazenadas no sistema do
+            usuário, e protegidas por uma senha. Entretanto, estas chaves também podem ser geradas e armazenadas em um
+            dispositivo de hardware específico para esse contexto, como o iButton, um dispositivo portátil que destruirá
+            as chaves de criptografia que contêm se forem adulteradas.
+            <br /><br />
+            <img src="images/email.jpg" alt="Email" width="80%">
+            <figcaption class="figure-caption">Fonte: https://www.zohowebstatic.com/sites/default/files/u1590/050.5x-100.jpg</figcaption>
+            <br /><br />
+            Contudo, não é viável decifrar o tráfego de uma rede, e é mais eficaz buscar e recuperar as provas digitais
+            a partir dos sistemas finais. Os criminosos mais experientes já perceberam isso, e ao invés de tentar obter
+            cartões de crédito enquanto são transmitidos entre o cliente e o servidor através de uma conexão
+            criptografada Secure Sockets Layer (SSL), os criminosos têm como alvo os pontos finais da comunicação. Os
+            hackers geralmente roubam cartões de crédito instalando um vírus Trojan nos sistemas dos indivíduos e
+            monitorando suas teclas, ou invadindo o servidor e roubando o arquivo que contém informações de cartão de
+            crédito.
+          </ul>
+          </p>
+        </ul>
+      </div>
+
+      <br />
+      <!-- Rastros Digitais nas Camadas Física e de Enlace -->
+      <div class="container content" id="rastrosFisicaEnlace">
+        <h1 class="display-4 title">Rastros Digitais nas Camadas Física e de Enlace</h1>
+        <ul>
+          <p class="lead">
+            As camadas físicas e de enlace fornecem a base para tudo em uma rede. A camada física é o meio que
+            transporta os dados, como os cabos, ondas de rádio, microondas ou lasers. A camada de enlace une o
+            computador à camada física e inclui o método de transmissão da comunicação. As placas de rede fazem parte
+            desta camada de enlace, conectando computadores aos cabos de rede. Cada placa tem um endereço único
+            (endereço MAC) que pode ser usado para determinar qual host foi usado para cometer um crime.
+            <br /><br />
+            A abordagem mais comum para a coleta de provas digitais sobre as camadas físicas e de enlace de dados, é
+            conhecida como “eavesdropping” (escutar secretamente). Com a ajuda de uma ferramenta de monitoramento de
+            rede, como um sniffer, os investigadores (ou criminosos) podem capturar grandes quantidades de informações
+            enquanto elas viajam através de uma rede. Esta abordagem de coleta de tráfego da rede é comparável a fazer
+            um backup de um disco rígido, com o sniffer conseguindo capturar cada byte transmitido na rede. Os
+            investigadores digitais podem usar um sniffer para monitorar o computador de um criminoso em uma rede e
+            recuperar imagens, anexos de e-mail ou qualquer outra coisa que os infratores tenham transmitido na rede.
+            <br /><br />
+            <img src="images/sniffer.png" alt="Sniffer" width="80%">
+            <figcaption class="figure-caption">Fonte: https://pimages.toolbox.com/wp-content/uploads/2022/05/10070039/How-a-Packet-Sniffing-Attack-Works.png</figcaption>
+            
+            <br /><br />
+            Até recentemente, os registros de atividades nas camadas física e de enlace eram raramente guardados por uma
+            organização. Registar todas as informações que passam por uma rede é um processo custoso, e pode resultar em
+            arquivos de registro muito grandes. Entretanto, como o armazenamento está se tornando mais barato e as
+            ferramentas de monitoramento, mais desenvolvidas, cada vez mais organizações estão guardando tais registros.
+            Sem estes tipos de logs, torna-se muito mais difícil obter provas digitais das camadas físicas e de enlace,
+            pois a maioria dos dados não são armazenados por muito tempo.
+          </p>
+        </ul>
+      </div>
+
+      <br />
+      <!-- Investigação nas Camadas de Rede e Transporte -->
+      <div class="container content" id="investigacaoRedeTransporte">
+        <h1 class="display-4 title">Investigação nas Camadas de Rede e Transporte</h1>
+        <ul>
+          <p class="lead">
+            Para que um sistema de comunicação funcione, ele deve possuir um mecanismo de endereçamento. Muitas vezes,
+            há também a necessidade de existir alguma forma de verificação para provar que uma mensagem tenha chegado ao
+            seu destino. As redes de computadores possuem um esquema de endereçamento e, normalmente, um método para
+            confirmar que a informação foi entregue corretamente. As camadas de rede e transporte são as responsáveis
+            por estes importantes aspectos das redes.
+            <br /><br />
+            Ações nas camadas de rede e transporte geram informações que muitas vezes são essenciais em uma
+            investigação. Os arquivos de log contêm dados sobre as atividades na rede, a hora de ocorrência e os
+            endereços das máquinas envolvidas. As tabelas de estado contém informações importantíssimas, incluindo
+            endereços de IP das conexões recentemente formadas entre hosts. Os endereços IP nos arquivos de log e
+            tabelas de estado podem ser usados para determinar o ponto de origem de um crime, levando assim os
+            investigadores aos prováveis suspeitos. Além disso, estas provas digitais são úteis para a reconstrução
+            investigativa e são cruciais para estabelecer as ligações do delito.
+            <br /><br />
+            <img src="images/firewalllog.png" alt="FireWall Log" width="80%">
+            <figcaption class="figure-caption">Fonte: https://d1ny9casiyy5u5.cloudfront.net/wp-content/uploads/2020/10/Windows-Firewall-logging-1-800x571.webp</figcaption>
+            <br /><br />
+            Processar e analisar provas nas nas camadas de rede e de transporte é como retirar a cola que une uma rede
+            de computadores. Este processo pode gerar muitas informações, mas o investigador tem que possuir a
+            habilidade para conseguir distinguir as evidências dos lixos. Em uma situação destas é necessário se
+            familiarizar com os detalhes técnicos dessas camadas para tirar o melhor proveito delas como uma fonte de
+            provas digitais.
+          </p>
+        </ul>
+      </div>
+
+      <br />
+      <!-- Antiforense -->
+      <div class="container content" id="antiForense">
+        <h1 class="display-4 title">Antiforense</h1>
+        <ul>
+          <p class="lead">
+            Após invadir um sistema, o atacante pode utilizar de várias formas para dificultar que peritos forenses
+            descubram quem foi o responsável pelo ato. Isso pode ser feito deletando rastros, criptografando vestígios,
+            criando pistas falsas, aumentando o tempo de análise do perito, manipulando dados em mídias externas…
+            <br /><br />
+            Alguns destes métodos são:
+
+          <p class="h4"> Criptografia </p>
+          <ul style="list-style: none;" class="lead">
+            A criptografia torna as informações do arquivo cifradas com base em uma chave. Dessa forma, só consegue
+            acesso aos dados reais o usuário que possuir a chave de criptografia.
+            <br /><br />
+            Diferente do que se pode imaginar, decifrar a chave de criptografia não é algo viável uma vez que, se
+            tratando de uma boa criptografia, a única forma de descobri-la seria a força bruta, o que levaria muitos
+            anos.
+          </ul>
+
+          <br /><br />
+          <p class="h4"> Esteganografia </p>
+          <ul style="list-style: none;" class="lead">
+            Esteganografia é utilizar uma outra mídia para esconder uma determinada informação. Essas outras mídias são,
+            geralmente, de áudio ou imagem.
+          </ul>
+
+          <br /><br />
+          <p class="h4"> Wiping </p>
+          <ul style="list-style: none;" class="lead">
+            O wipe é a sobre-escrita de dados e metadados anteriormente salvos na máquina, assim como slack-spaces.
+
+            <br /><br />
+            <p class="h5"> Slack-spaces </p>
+            <ul style="list-style: none;" class="lead">
+              Um disco rígido vem de fábrica dividido em setores, geralmente de 512 bytes. O sistema operacional agrega
+              esses setores em clusters (ou blocos), e separa um número inteiro de clusters para cada arquivo.
+              <br /><br />
+              A diferença entre o tamanho lógico do arquivo e o espaço físico do cluster é o slack space. Nele ficam
+              dados sobre os antigos arquivos que já foram guardados naqueles endereços de memória.
+              <br /><br />
+              <img src="images/slackspace.webp" width="50%" alt="Slack-spaces">
+              <figcaption class="figure-caption">Fonte: https://qph.cf2.quoracdn.net/main-qimg-55ead6a642a46e5df6078f0c5eb2b095</figcaption>
+            </ul>
+          </ul>
+
+          <br /><br />
+          <p class="h5"> Proxy e VPN </p>
+          <ul style="list-style: none;" class="lead">
+            Tanto o Proxy como a VPN mascaram o IP da máquina cliente, de forma que o servidor só tem conhecimento do IP
+            do intermediário.
+            <img src="images/proxy.svg.png" width="100%" alt="Proxy">
+            <figcaption class="figure-caption">Fonte: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Forward_proxy_h2g2bob.svg/1920px-Forward_proxy_h2g2bob.svg.png</figcaption>
+          </ul>
+
+      </div>
+
+      <br />
+      <!-- Conclusão -->
+      <div class="container content" id="conclusao">
+        <h1 class="display-4 title">Conclusão</h1>
+        <ul>
+          <p class="lead">
+            O uso da internet hoje está presente na vida de todas as pessoas. Por ela guardar tantas informações
+            importantes e sensíveis, cada vez mais as empresas investem em segurança.
+            <br /><br />
+            Apesar da sensação de anonimato que se possa ter ao usar a rede, quando se navega na internet muitos rastros
+            são deixados para trás e com o barateamento dos custos de armazenamento, essa quantidade tende só a
+            aumentar. Esses vestígios aparecem em diversos componentes e camadas da rede, o que gera uma maior trabalho
+            para juntar as informações, mas também torna mais difícil para o atacante não deixar pistas.
+            <br /><br />
+            Apesar de muitos dados estarem disponíveis, poucos são informações relevantes. Fazer a distinção entre o que
+            é ou não aproveitável não é uma tarefa simples e pode exigir uma certa experiência.
+          </p>
+        </ul>
+      </div>
+
+      <br />
+      <!-- Perguntas -->
+
+      <div class="container content" id="perguntas">
+        <h1 class="display-4 title">Perguntas</h1>
+        <ul style="list-style: none;" class="lead">
+          <br />
+          <p class="h4"> O que é a Análise Forense? </p>
+          
+            Análise Forense Digital é um ramo da ciência forense que trabalha com um conjunto de técnicas para coleta e
+            exame de evidências digitais, reconstrução de dados e ataques, identificação e rastreamento de invasores.
+            
+
+          <br/><br/>
+          <p class="h4">Qual a vantagem e a desvantagem de termos provas distribuídas nas redes?</p>
+          
+            A vantagem é que a distribuição das informações dificulta a destruição das evidências, pois se as provas
+            forem danificadas em uma máquina uma cópia pode ser encontrada em outra. A desvantagem é que torna mais
+            difícil isolar a cena do crime.
+            
+
+          <br/><br/>
+          <p class="h4">Como criminosos podem usar o Anonimato Online? E investigadores?</p>
+          
+            Criminosos usam para esconder suas identidades e assim não deixar rastros quando cometem crimes, diminuindo
+            a chance de serem descobertos. Investigadores podem criar identidades falsas e se passar por criminosos para
+            adquirir informações sigilosas.
+            
+
+          <br/><br/>
+          <p class="h4">Qual a maior dificuldade de se analisar provas nas camadas de rede e transporte?</p>
+          
+            Como essas camadas possuem muitas informações, torna-se muito complexo a análise para distinguir as
+            informações importantes para a investigação das não relevantes.
+            
+
+          <br/><br/>
+          <p class="h4">Ao apagar um arquivo do computador e esvaziar a lixeira, ainda é possível recuperá-lo? E se
+            ocuparmos o espaço físico com outros arquivos?</p>
+            
+            Sim. Ao apagar da lixeira o sistema operacional apenas apaga a referência para o arquivo, mas com
+            ferramentas de análise forense é possível restaurar integralmente o arquivo se ele ainda não tiver sido
+            reescrito. Mesmo que o espaço seja ocupado com outros arquivos, ainda é possível que tenhamos informações
+            sobre o arquivo anterior no slack-space.
+            
+        </ul>
+      </div>
+
+      <br />
+      <!-- Bibliografia  -->
+      <div class="container content" id="bibliografia">
+        <h1 class="display-4 title">Bibliografia</h1>
+        <ul style="list-style: none;">
+          <br />
+          <i>Eoghan Casey, "Digital Evidence and Computer Crime", Third Edition</i>
+          <br /><br />
+          <i>Cristiano Monteiro Nunes, "A Análise de Tráfego em Redes como Método de Coleta de Evidências Digitais"</i>
+          <br /><br />
+          <i>GARFINKEL Simon, Anti-Forensics: Techniques, Detection and Countermeasures</i>
+          <br /><br />
+          <i>Post do Blog da Netresec</i> - Link:
+          https://www.netresec.com/?page=Blog&month=2011-01&post=Facebook-SSL-and-Network-Forensics
+          <br /><br />
+          <i>Post do Blog da BC Security</i> - Link:
+          https://www.bc-security.org/post/ja3-s-signatures-and-how-to-avoid-them
+      </div>
+    </div>
+
+    <!-- Grupo -->
+    <div class="container content">
+      <h1 class="display-4 title">Grupo</h1>
+      <br />
+      <ul style="list-style: none;">
+        <p class="lead">
+          Trabalho feito para o curso de Redes de Computadores I <br />
+          Professor: Luís Henrique Maciel Kosmalski Costa <br />
+          <br />
+          Alunos: <br />
+          &nbsp; &nbsp; Patrick Carneiro Trindade <br />
+          &nbsp; &nbsp; Pedro Siqueira das Neves <br />
+        </p>
+      </ul>
+    </div>
+
+    <br /><br />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
