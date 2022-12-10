@@ -82,13 +82,14 @@
             O IEEE 1901 introduz duas técnicas sofisticadas de modulação que são similares ao que é usado hoje no WiFi,
             uma baseada em FFT (Fast Fourier Transform) e outra baseada em Wavelet. O Homeplug AV se demonstrou de
             extrema relevância por servir de tecnologia base para a modulação FFT.
+          </p>
             <br /><br />
             <img src="images/transform.png" alt="Modulações" width="80%">
             <figcaption class="figure-caption">Fonte: https://www.youtube.com/watch?v=ZnmvUCtUAEE&t=34s&ab_channel=SimonXu</figcaption>
             <br /><br />
+          <p class="lead">
             Estas inovações ajudaram a resolver problemas da PLC tradicional, como o ruído gerado nas linhas de energia, 
             as diferentes tensões elétricas ao redor do mundo e a complexidade de se transmitir dados por transformadores.
-
           </p>
         </ul>
       </div>
@@ -104,13 +105,16 @@
             é transmitida na faixa de 50 a 60 Hz, o HomePlug AV transmite na faixa de 1 a 30 MHz, permitindo que
             os 2 sinais convivam em harmonia. Permitindo que o sinal de internet funcione, mesmo que a energia elétrica
             não esteja passando no fio.
+          </p>
             <br /><br />
             <img src="images/plchome.png" alt="PlcHome" width="80%">
           <figcaption class="figure-caption">Fonte: https://t2.tudocdn.net/149156?w=1000&fit=clip</figcaption>
           <br /><br />
+          <p class="lead">
           Ao transmitir e receber dados entre dois dispositivos, os dados são modulados no transmissor, e o sinal
           modulado é sobreposto à tensão de alimentação AC ou DC. No receptor, os dados são extraídos separando a
           tensão de alimentação e o sinal modulado com um filtro, desmodulando o sinal.
+          </p>
           <br /><br />
           <img src="images/modulatedsignal.png" alt="ModulatedSignal" width="80%">
           <figcaption class="figure-caption">Fonte:
@@ -239,33 +243,33 @@
         <h1 class="display-4 title">Perguntas</h1>
         <ul style="list-style: none;" class="lead">
           <br />
-          <p class="h4">Pergunta? </p>
+          <p class="h4">Qual a diferença entre o Homeplug e Homeplug AV? </p>
 
-          Resposta.
+          O Homeplug AV é uma das versões dos modelos PLC da família HomePlug.
 
 
           <br /><br />
-          <p class="h4">Pergunta?</p>
+          <p class="h4">O HomePlug AV foi criado por qual motivo?</p>
 
-          Resposta.
+          De uma urgência que tivemos por serviços de conectividade visando transmissão de dados de áudio e vídeo com maior taxa.
 
+          
+          <br /><br />
+          <p class="h4">O IEEE 1901 introduziu duas camadas físicas diferentes. Elas foram baseadas em que tipos de modulação? Qual das duas utiliza como base a tecnologia do HomePlug AV?</p>
+          
+          Wavelet e FFT. A modulação FFT.
+          
+          
+          <br /><br />
+          <p class="h4">João está tendo problemas com o sinal de Wi-Fi em sua casa, o sinal de internet não tem qualidade em sua cozinha. Ele então pergunta para seu amigo Matheus, estudante da UFRJ, se ele conhece alguma solução para melhorar a qualidade do sinal, sem afetar a estrutura do apartamento, pelo fato de ele estar morando de aluguel. Matheus sugere para João pesquisar sobre o HomePlug. Matheus deu uma resposta adequada? Se sim, por qual motivo seria interessante testar o HomePlug ao invés do Wi-Fi na situação atual?</p>
+          
+          O HomePlug AV é uma solução que atende o que João precisa, pois já utilizaria a rede elétrica da casa, sem exigir obras no apartamento, podendo ser assim uma alternativa ao Wi-Fi.
+          
 
           <br /><br />
           <p class="h4">Uma pessoa compra 2 dispositivos HomePlug, os conecta na tomada e um no roteador e o outro em seu computador e automaticamente já tem acesso a internet. Essa pessoa pode então seguir usando a internet, despreocupada, sem mexer em nenhuma outra configuração?</p>
 
-          Não, por motivos de segurança ela deve trocar o token ...
-
-
-          <br /><br />
-          <p class="h4">Pergunta?</p>
-
-          Resposta.
-
-
-          <br /><br />
-          <p class="h4">Pergunta?</p>
-
-          Resposta.
+          Não, a pessoa deve alterar a chave de criptografia. Os 2 dispositivos terem se conectado automaticamente indicam que a marca utiliza uma chave padrão em todos seus dispositivos, se não for trocada uma pessoa com acesso à rede elétrica poderá fazer sniffing nos pacotes.
 
         </ul>
       </div>
@@ -276,10 +280,25 @@
         <h1 class="display-4 title">Bibliografia</h1>
         <ul style="list-style: none;">
           <br />
-          <i>Nome do Livro</i>
+          <i>Padrão IEEE1901-2010</i> - Link:
+          https://standards.ieee.org/ieee/1901/7598/
           <br /><br />
-          <i>Nome do blog/Site</i> - Link:
-          https://url.org/do-site
+          <i>Blog da HD-PLC</i> - Link:
+          https://hd-plc.org/standards/ieee-1901/
+          https://hd-plc.org/what-is-power-line-communication-plc/
+          <br /><br />
+          <i>GTA-UFRJ</i> - Link:
+          https://www.gta.ufrj.br/grad/04_1/redesplc/3.html
+          <br /><br />
+          <i>Wikipédia</i> - Link:
+          https://en.wikipedia.org/wiki/HomePlug
+          <br /><br />
+          <i>Frequency Cast</i> - Link:
+          https://www.frequencycast.co.uk/powerline.html
+          <i>Techtudo</i> - Link:
+          https://www.techtudo.com.br/noticias/2015/11/homeplug-conheca-tecnologia-que-promete-levar-wi-fi-pela-tomada.ghtml
+          <i>Techopedia</i> - Link:
+          https://www.techopedia.com/definition/1741/homeplug
       </div>
     </div>
 
